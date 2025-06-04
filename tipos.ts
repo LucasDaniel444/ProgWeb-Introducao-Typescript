@@ -1,53 +1,55 @@
-//===TIPOS EM TYPESCRIPT===
+ //***TIPOS EM TYPESCRIPT***** *
 
-//Tipos Primitivos
-let texto: string  = "Olá Mundo";
-let numero: number = 42;
-let ativo: boolean =  true;
+ // TIPOS PRIMITIVOS
+  let texto: string = "Ola mundo";
+  let numero: number = 42;
+  let ativo: boolean = true;
 
-//Arrays
-let numeros: number[] = [1, 2, 3, 4, 5];  //Primeira Forma 
-let palavras: Array<string> = ["TypeScript", "JavaScript"];  //Segunda Forma
+  //Arrays
+  let numeros: number[] = [1, 2, 3, 4, 5] //primeira forma de declarar array
+  let palavras: Array<string> = ['Typescript', 'é', 'daora'] //segunda forma de declarar array
 
-//Tuplas
-let pessoa: [string, number] = ['João', 25];
+  //Tuplas
+  let pessoa: [string, number] = ['Zezão',24]
 
-//Enum
-enum Cores {
-    Vermelho,
-    Verde,
-    Azul
-}
+  //Enum -- enumeração
+  enum Cores{
+    Azul,
+    Branco,
+    Preto
+  }
 
-let corFavorita: Cores = Cores.Azul;
+let corfavorita: Cores.Branco
 
-//Any (evitar sempre que possivel)~
+
+//Any(evitar sempre que possivei)
 let dadoAleatorio: any = 5;
-dadoAleatorio = 'Texto';
-dadoAleatorio = true;
+dadoAleatorio = 'Texto dahora';
+dadoAleatorio = true; //(any recebe todo tipo de valor)
 
-//unknow (tipo mais seguro do any)
-let dadoDesconhecido: unknown = 19;
+//unknow(tipos mais seguro do que any)
+let dadoDesconehecido: unknown = 10;
 
-
-//void
-function mostrarAlerta(): void{
-    console.log("Atenção! preste atençao na aula.")
-}
-
-//null ou undefined
+//Void
+function mostarAlerta(): void(
+    console.log('Atenção preste atenção na aula')
+)
+//Null e undefined
 let nada: null = null;
-let indefinido: undefined = undefined;
+let indefinido: undefined;
 
-//never (usado quando a função nunca retorna)
+//Never (usado quando a função nunca retorna)
 function erroFatal(mensagem:string): never{
     throw new Error(mensagem)
 }
 
-//type aliases (Type seria o equivalente ao python de dicionario)
+//Type aliases
 type Usuario = {
-    nome: String;
-    idade: number
-}
+    nome: string;
+    idade: number;
+};
 
-let usuario: Usuario = {nome:"Kauan", idade:17}
+let usuario: Usuario = {
+    nome: "Lucas",
+    idade: 16,
+};

@@ -1,35 +1,33 @@
-let a: number = 1;
-let b: number = 2;
+let a: number = 10;
+let b: number = 14;
 
-//Aritméticos
-console.log("Soma ",a + b);
-console.log("Subtrair ",a - b);
-console.log("Multiplicar ",a * b);
-console.log("Dividir ",a / b);
-console.log(a, "elevado a ", b, " = ",a ** b); //elevar
-console.log("Resto de",a % b);
+//Aritmeticos
+console.log('soma', a + b)
+console.log('subtração', a - b)
+console.log('multiplicação', a * b)
+console.log('divisão', a / b)
+console.log('resto', a % b) //percente
 
-//relacionais
-console.log("Igual ", a == b);
-console.log("Diferente ", a != b);
-console.log("Maior que", a > b);
-console.log("Menor que", b > a);
-console.log("Maior ou igual", a >= b);
-console.log("Menor ou igual", a <= b);
+//Relacionais
+console.log('Igual (==)', a == b);
+console.log('Diferente ', a != b);
+console.log('Maior que', a > b);
+console.log('Menor que', a < b);
+console.log('Maior igual', a >= b);
+console.log('Menor igual', a <= b);
 
-//identidades restrita
-console.log("Identicos", a === b);
-console.log("Não identico", a !== b);
+//Identidade restrita
+console.log('Identico', a === b);
+console.log('Não identico', a !== b);
 
-//Logicos
+//Lógicos
 let x: boolean = true;
-let y: boolean =  false;
+let y: boolean = false;
 
-console.log("and", x && y);
-console.log("or", a || y);
-console.log("not", !x);
+console.log('AND', x && y);
+console.log('OR', x || y);
+console.log('NOT', !x);
 
 //Operador condicional (ternario)
-let idade: number = 17
-let acesso = idade >= 18 ? "Permitido beijar na boca" : "Não permitido";
-
+let idade: number = 17;
+let acesso = idade >= 18 ? 'permitido beijar na boca' : 'Não permitido'
